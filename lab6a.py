@@ -28,11 +28,11 @@ class Student:
 
     # Return a list of course that the student passed (not a 0.0 grade)
     def displayCourses(self):
-        passed_grade = []
+        course_passed = []
         for course in self.courses.keys():
             if self.courses[course] > 0.0:
-                passed_grade.append(course)
-        return passed_grade 
+                course_passed.append(course)
+        return course_passed
 
 if __name__ == '__main__':
     # Create first student object and add grades for each class
